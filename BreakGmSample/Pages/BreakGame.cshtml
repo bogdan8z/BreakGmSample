@@ -1,0 +1,25 @@
+﻿@page
+@model BreakGmSample.Pages.BreakGameModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Breakout Game</title>
+	<!-- Link to CSS file -->
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Breakout Game</h1>
+<button id="startGameBtn">Start Game</button>
+<button id="pauseGameBtn">Pause Game</button>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div class="canvas-container">
+        <div id="canvasOverlay" class="canvas-overlay">Paused</div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+</div>
+<!-- Link to JavaScript file -->
+<script src="/js/game.js"></script>
+</body>
+</html>
