@@ -166,8 +166,10 @@ function moveBall() {
         if (ballX > paddleX && ballX < paddleX + paddleWidth) {
             ballDY = -ballDY; // Bounce off the paddle
         } else {
-             alert("Game Over!"); // Show a game over message
-              document.location.reload(); // Reload page to restart game
+
+            //alert("Game Over!"); // Show a game over message
+            console.log("Game Over!");
+            document.location.reload(); // Reload page to restart game
         }
     }
 }
